@@ -1,0 +1,688 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    flex-grow: 1;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.user a, .user button {
+    margin-left: 10px;
+    padding: 8px 12px;
+    border: none;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    text-decoration: none; /* For anchor tags */
+}
+
+.user a:hover, .user button:hover {
+    background-color: #777;
+}
+
+.search {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.search input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.search button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #555;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search button:hover {
+    background-color: #777;
+}
+
+main {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.player-box, .team-box {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s;
+}
+
+.player-box:hover, .team-box:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Top 10 section CSS */
+.top-section {
+    flex: 0 0 calc(50% - 20px); /* Two items per row with margin */
+    margin: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.top-section h2 {
+    margin-top: 0;
+}
+
+.top-section p {
+    margin-bottom: 0;
+}
+
+/* Leaderboard CSS */
+
+.leaderboards {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.leaderboard {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 10px;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    background-color: #ccc; /* Placeholder for avatar */
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.info {
+    flex: 1;
+}
+
+.info h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.info p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Styles for LFT */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.user button {
+    margin-left: 10px;
+    padding: 8px 12px;
+    border: none;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+}
+
+.user button:hover {
+    background-color: #777;
+}
+
+.search {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.search input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.search button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #555;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search button:hover {
+    background-color: #777;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+main {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form h2 {
+    margin-bottom: 20px;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #555;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form button:hover {
+    background-color: #777;
+	
+/* Tournament CSS */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.user button {
+    margin-left: 10px;
+    padding: 8px 12px;
+    border: none;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+}
+
+.user button:hover {
+    background-color: #777;
+}
+
+.search {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.search input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.search button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #555;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search button:hover {
+    background-color: #777;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+main {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Tournament Styles */
+.tournaments {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.tournament {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.tournament h3 {
+    margin-top: 0;
+}
+
+.tournament p {
+    margin-bottom: 10px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+/* Patchnotes styles */
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.user button {
+    margin-left: 10px;
+    padding: 8px 12px;
+    border: none;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+}
+
+.user button:hover {
+    background-color: #777;
+}
+
+.search {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.search input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.search button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #555;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search button:hover {
+    background-color: #777;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+main {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Patch Notes Styles */
+ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Patch Notes Styles */
+/* Updated Patch Notes Styles */
+.patch-notes {
+    margin-top: 20px;
+    text-align: left; /* Align patch notes to the left */
+    padding-left: 20px; /* Add some left padding for better readability */
+}
+
+.patch-note {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.patch-note p {
+    margin-bottom: 5px; /* Reduce bottom margin between paragraphs */
+    font-size: 14px;
+    color: #888;
+}
+
+.update {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 3px solid #3498db;
+}
+
+.update-title {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.update-description {
+    color: #555;
+}
+
+/* Socials Styles */
+.social-links ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+}
+
+.social-links ul li {
+    margin-bottom: 10px; /* Add spacing between each social media link */
+}
+
+.social-links ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Set link color */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Signup styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+button {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+p {
+    margin-top: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+/* Leaderboards information */
+.leaderboard {
+    margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+.player {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Adjust margin between players as needed */
+}
+
+.avatar {
+    width: 50px; /* Adjust avatar size as needed */
+    height: 50px;
+    background-color: gray; /* Example background color */
+    margin-right: 10px; /* Adjust margin between avatar and info as needed */
+}
+
+.info {
+    flex: 1; /* Allow info to expand and fill remaining space */
+}
+
+/* JS LOGIN */
+document.getElementById('loginForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    // Perform login logic here
+    console.log('Login clicked');
+});
+
+/* JS SIGNUP */
+document.getElementById('signupForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    // Perform sign up logic here
+    console.log('Sign Up clicked');
+});
