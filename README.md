@@ -14,20 +14,19 @@ Configuring the Database Connection
 After setting up the database, the next step is to configure the PHP application to connect to it. Locate the config.php file inside the project folder and open it in a text editor. Ensure the database connection settings match your local environment. By default, XAMPP uses localhost as the server name, root as the MySQL username, and an empty password. The database name should be set to valorantlol. The configuration should look something like this:
 
 php
-Copy
+copy
 <?php
 $servername = "localhost";
 $username = "root";
 $password = "";
 $database = "valorantlol";
-
-$conn = new mysqli($servername, $username, $password, $database);
+$conn = new mysqli($servername, $password, $database);
 
 if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+    die ("Connection failed: " . $conn->connect_error);
 }
 ?>
-If you set a password for MySQL during installation, update the $password field accordingly. Save the file after making any necessary changes.
+If you set a password for mysql during installation, update the $password field accordingly. Save the file after making any necessary changes.
 
 Running the Project
 Now that everything is set up, you can launch the project. Open your web browser and enter the following URL: http://localhost/your-project-folder/. If everything is configured correctly, the homepage should load, and you can access all features, including signing up, logging in, editing your profile, searching for teams, viewing leaderboards, and sending messages.
